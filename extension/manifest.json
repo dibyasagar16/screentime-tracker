@@ -3,7 +3,7 @@
   "name": "Screen Time & Focus Tracker",
   "version": "1.0",
   "description": "Track how much time you spend on each site and get daily summaries.",
-  "permissions": ["tabs", "storage"],
+  "permissions": ["tabs", "storage", "alarms"],
   "background": {
     "service_worker": "background.js"
   },

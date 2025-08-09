@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Screen Time Tracker</title>
+    <meta charset="utf-8" />
+    <title>Focus Tracker</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <h1>Screen Time</h1>
-    <div id="time-today">Today: 0m</div>
-    <button id="reset-btn">Reset</button>
+    <div class="card">
+      <header class="card-header">
+        <div>
+          <h1>Focus Tracker</h1>
+          <p class="muted">Today</p>
+        </div>
+        <div class="time" id="total-time">0m</div>
+      </header>
+
+      <main class="card-body">
+        <div class="controls">
+          <button id="reset-btn" class="btn btn-danger">Reset</button>
+          <button id="export-btn" class="btn">Export</button>
+        </div>
+
+        <h3 class="section-title">Top Sites</h3>
+        <ul id="domain-list" class="domain-list">
+          <!-- Example list item (for structure reference)
+          <li class="domain-item">
+            <img class="favicon" src="https://example.com/favicon.ico" alt="Example" />
+            <div class="domain-info">
+              <span class="domain-name">example.com</span>
+              <span class="domain-time">5m</span>
+            </div>
+          </li>
+          -->
+        </ul>
+
+        <p class="small muted">Data stored locally. Private to your browser.</p>
+      </main>
+    </div>
 
     <script src="popup.js"></script>
   </body>
