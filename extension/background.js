@@ -57,7 +57,6 @@ function updateActiveTime() {
 
     totalTimeToday += elapsedSeconds;
     saveTotals();
-    console.log(`Logged ${elapsedSeconds}s for ${domain}`);
   });
 }
 
@@ -78,7 +77,6 @@ function checkDate() {
   if (today !== currentDate) {
     currentDate = today;
     resetData();
-    console.log("New day detected — resetting counters.");
   }
 }
 
