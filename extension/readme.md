@@ -29,7 +29,7 @@ Follow these steps to get the extension up and running in your Chrome browser.
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/your-username/your-project-name.git
+git clone https://github.com/dibyasagar16/screentime-tracker.git
 ```
 
 2. Open Chrome and go to `chrome://extensions` in your address bar.
